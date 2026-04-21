@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Profil Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header>
+        <h1>Profil Saya</h1>
+        <nav>
+        <a href="#page">Halaman</a> |
+        <a href="#information">Informasi</a> |
+        <a href="#registration">Pendaftaran</a>
+    </nav>
+    </header>
+    
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- SECTION: Isi halaman profil -->
+        <section id="page">
+            <article>
+                <center>
+                <img src="potoku.jpeg" alt="potoku" style="height: 200px;"> 
+                <p>Halo, ini adalah halaman profil sederhana saya </p>
+                </center>
+                <left>
+                <h2>Tentang Saya</h2>
+                <p>
+                    Nama saya adalah Salma Nurul Aliyah.
+                    Saat ini saya sedang menempuh pendidikan di 
+                    Institut Teknologi Sains dan Kesehatan RS. dr. Soepraoen Malang.
+                    Saya adalah mahasiswi semester 4 Prodi S1 Informatika, 
+                    dan saya sekarang sedang belajar Pemrograman Web.
+
+                </p>
+                </left>
+            </article>
+        </section>
+
+        <!-- SECTION: Informasi -->
+        <section id="information">
+            <article>
+                <h2>Informasi</h2>
+                <ul>
+                    <li>Pendaftaran Umum</li>
+                    <li>Pendaftaran Pelajar</li>
+                    <li>Pendaftaran Mahasiswa</li>
+                </ul>
+            </article>
+        </section>
+
+    <!-- SECTION: Form Pendaftaran -->
+        <section id="registration">
+            <article>
+                <h2>Pendaftaran</h2>
+
+                <!-- FORM -->
+                 <form>
+
+                    <!-- Nama -->
+                    <label for="nama">Nama:</label> <br>
+                    <input type="text" id="nama" name="nama"> <br>
+
+                    <!-- Email -->
+                    <label for="email">Email:</label> <br>
+                    <input type="email" id="email" name="email"> <br>
+
+                    <!-- NomorHP -->
+                    <label for="nomorHP">NomorHp:</label> <br>
+                    <input type="tel" id="nomorHP" name="nomorHP"> <br>
+
+                    <!-- Kategori -->
+                    <label for="kategori">Kategori:</label> <br>
+                    <select name="kategori" id="kategori" required>
+
+                        <!-- Pilih Kategori -->
+                        <option value="">Pilih</option>
+                        <option value="umum">Umum</option>
+                        <option value="pelajar">Pelajar</option>
+                        <option value="mahasiswa">Mahasiswa</option>
+                    </select> <br><br>
+
+                    <!-- Pesan -->
+                    <label for="pesan">Pesan:</label><br>
+                    <textarea name="pesan" id="pesan"></textarea><br><br>
+
+                    <!-- Tombol -->
+                    <button type="submit">Kirim</button>
+        
+                </form>
+                <br><hr>
+            </article>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Profil saya </p>
+    </footer>
+
+</body>
+</html>
