@@ -1,29 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("JS NYAMBUNG ✅");
 
-    // === 1. FITUR DARK MODE ===
-    const btnToggle = document.getElementById("darkModeToggle");
-
-    if (btnToggle) {
-        // Cek penyimpanan lokal saat halaman dimuat
-        if (localStorage.getItem("theme") === "dark") {
-            document.body.classList.add("dark-mode");
-            btnToggle.innerText = "☀️ Mode Terang";
-        }
-
-        btnToggle.addEventListener("click", function () {
-            document.body.classList.toggle("dark-mode");
-
-            if (document.body.classList.contains("dark-mode")) {
-                localStorage.setItem("theme", "dark");
-                btnToggle.innerText = "☀️ Mode Terang";
-            } else {
-                localStorage.setItem("theme", "light");
-                btnToggle.innerText = "🌙 Mode Gelap";
-            }
-        });
-    }
-
     // === 2. FORM PENDAFTARAN ===
     const form = document.getElementById("formPendaftaran");
     const hasil = document.getElementById("hasilPendaftaran");
@@ -74,6 +51,13 @@ document.addEventListener("DOMContentLoaded", function () {
         darkModeBtn.id = "darkModeToggle";
         darkModeBtn.className = "dark-mode-btn";
         darkModeBtn.innerText = "🌙 Dark Mode";
+        
+        // CSS tambahan agar tampilannya sama seperti tombol sebelumnya
+        darkModeBtn.style.cursor = "pointer";
+        darkModeBtn.style.padding = "5px 10px";
+        darkModeBtn.style.borderRadius = "5px";
+        darkModeBtn.style.border = "none";
+
         darkModeLi.appendChild(darkModeBtn);
         navMenu.appendChild(darkModeLi);
 
@@ -96,26 +80,26 @@ document.addEventListener("DOMContentLoaded", function () {
                 darkModeBtn.innerText = "🌙 Dark Mode";
             }
         });
+    }
 
-        // =========================
-        // LOADING SCREEN FULL
-        // =========================
+    // =========================
+    // LOADING SCREEN FULL
+    // =========================
 
-        window.addEventListener("load", function () {
-            const loadingScreen = document.getElementById("loading-screen");
+    window.addEventListener("load", function () {
+        const loadingScreen = document.getElementById("loading-screen");
 
-            if (!loadingScreen) return;
+        if (!loadingScreen) return;
+
+        setTimeout(() => {
+            loadingScreen.style.opacity = "0";
+            loadingScreen.style.transition = "0.5s ease";
 
             setTimeout(() => {
-                loadingScreen.style.opacity = "0";
-                loadingScreen.style.transition = "0.5s ease";
-
-                setTimeout(() => {
-                    loadingScreen.style.display = "none";
-                }, 500);
-            }, 1000); // durasi loading 1 detik
-        });
-    }
+                loadingScreen.style.display = "none";
+            }, 500);
+        }, 1000); // durasi loading 1 detik
+    });
 
 
 });

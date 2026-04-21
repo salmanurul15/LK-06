@@ -152,6 +152,8 @@ footer {
   color: white;
 }
 
+
+
 /* ================= DARK MODE (SUDAH DIRAPIKAN) ================= */
 body.dark-mode {
   background: #121212;
@@ -196,8 +198,6 @@ body.dark-mode button {
 body.dark-mode button:hover {
   background: #9b5cf6;
 }
-
-
 
 /* ================= LOADING SCREEN ================= */
 #loading-screen {
