@@ -144,6 +144,53 @@ button:hover {
   text-align: center;
 }
 
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 8px;
+  color: white;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+}
+
+.social-links .ig {
+  background: #e1306c;
+}
+
+.social-links .ig:hover {
+  background: #c13584;
+}
+
+.social-links .in {
+  background: #0077b5;
+}
+
+.social-links .in:hover {
+  background: #006097;
+}
+
+.social-links .gh {
+  background: #333333;
+}
+
+.social-links .gh:hover {
+  background: #111111;
+}
+
 /* FOOTER */
 footer {
   text-align: center;
