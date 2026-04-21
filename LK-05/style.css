@@ -77,7 +77,7 @@ article {
   background: #889063;
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
 }
 
@@ -110,7 +110,7 @@ ul {
 
 /* FORM */
 form {
-  background: #4d4b3b;
+  background: #4b5a33;
   padding: 20px;
   border-radius: 10px;
   display: flex;
@@ -123,7 +123,7 @@ select,
 textarea {
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #889063;
 }
 
 button {
@@ -142,29 +142,6 @@ button:hover {
 /* SOCIAL */
 #social-media article {
   text-align: center;
-}
-
-/* VISITOR */
-.counter-info {
-  background: #f7f4d5;
-  color: #354024;
-  padding: 10px;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.visitor-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.visitor-list li {
-  background: #f7f4d5;
-  color: #354024;
-  padding: 8px 12px;
-  border-radius: 5px;
 }
 
 /* FOOTER */
@@ -208,7 +185,7 @@ body.dark-mode select,
 body.dark-mode textarea {
   background: #121212;
   color: white;
-  border: 1px solid #444;
+  border: 1px solid #889063;
 }
 
 body.dark-mode button {
@@ -220,42 +197,7 @@ body.dark-mode button:hover {
   background: #9b5cf6;
 }
 
-body.dark-mode .counter-info,
-body.dark-mode .visitor-list li {
-  background: #1e1e1e;
-  color: #fff;
-}
 
-/* ================= TODO LIST ================= */
-#todo article {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-#todoInput {
-  padding: 10px;
-}
-
-#todoList {
-  list-style: none;
-}
-
-#todoList li {
-  background: #f7f4d5;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  border-radius: 5px;
-}
-
-#todoList li button {
-  background: red;
-  color: white;
-  border: none;
-  padding: 5px 8px;
-  border-radius: 5px;
-}
 
 /* ================= LOADING SCREEN ================= */
 #loading-screen {

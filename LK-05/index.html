@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lembar Kerja 4</title>
+    <title>Lembar Kerja 5</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- LOADING SCREEN -->
-        <div id="loading-screen">
-            Loading...
-        </div>
+    <div id="loading-screen">
+        Loading...
+    </div>
     <!-- HEADER / NAVBAR -->
-     <header class="navbar">
+    <header class="navbar">
         <div class="nav-container">
             <!-- KIRI -->
             <h1 class="logo">Salma Nurul</h1>
@@ -25,75 +27,83 @@
                     <li><a href="#kontak">Kontak</a></li>
                     <li><a href="#social-media">Social Media</a></li>
                     <li>
-                        <button id="darkModeToggle" style="cursor: pointer; padding: 5px 10px; border-radius: 5px; border: none;">🌙 Mode Gelap</button>
+                        <button id="darkModeToggle"
+                            style="cursor: pointer; padding: 5px 10px; border-radius: 5px; border: none;">🌙 Mode
+                            Gelap</button>
                     </li>
                 </ul>
             </nav>
         </div>
-     </header>
+    </header>
 
-     <!-- HERO (agar foto tetap ada)-->
-      <section class="hero">
+    <!-- HERO (agar foto tetap ada)-->
+    <section class="hero">
         <img src="potoku.jpeg" alt="potoku">
         <p>Mahasiswa Informatika</p>
 
-     <!---->
+        <!---->
         <main>
-            
+
             <!--Tentang-->
             <section id="tentang">
                 <h2>Tentang saya</h2>
                 <article>
-                    <p>Saya adalah mahasiswi S1 Informatika semester 4, dan sekarang saya sedang menempuh pendidikan di Institut Teknologi, Sains, dan Kesehatan RS dr. Soepraoen Malang. Ini adalah tugas Pemrograman Web, dan saya sedang belajar membuat tampilan web responsif menggunakan CSS modern</p>
+                    <p>Saya adalah mahasiswi S1 Informatika semester 4, dan sekarang saya sedang menempuh pendidikan di
+                        Institut Teknologi, Sains, dan Kesehatan RS dr. Soepraoen Malang. Ini adalah tugas Pemrograman
+                        Web, dan saya sedang belajar membuat tampilan web responsif menggunakan CSS modern</p>
                 </article>
             </section>
 
 
-             <!-- Belajar -->
-             <section id="belajar">
+            <!-- Belajar -->
+            <section id="belajar">
                 <h2>Belajar</h2>
 
                 <div class="belajar-container">
                     <article>
                         <h3>Pemrograman Web</h3>
-                        <p>Mata kuliah ini membahas konsep dan praktik pengembangan aplikasi web modern, meliputi arsitektur web (client-server), HTML, CSS, JavaScript, backend PHP-Laravel, basis data relasional, API, keamanan dasar, testing, dan deployment.</p>
+                        <p>Mata kuliah ini membahas konsep dan praktik pengembangan aplikasi web modern, meliputi
+                            arsitektur web (client-server), HTML, CSS, JavaScript, backend PHP-Laravel, basis data
+                            relasional, API, keamanan dasar, testing, dan deployment.</p>
                     </article>
 
                     <article>
                         <h3>Jaringan Komputer</h3>
-                        <p>Matakuliah praktikum yang berisikan tentang konfirgurasi sebuah router agar dapat mengelolah data, baik secara Lokal maupun secara Wider network.</p>
+                        <p>Matakuliah praktikum yang berisikan tentang konfirgurasi sebuah router agar dapat mengelolah
+                            data, baik secara Lokal maupun secara Wider network.</p>
                     </article>
 
                     <article>
                         <h3>Sistem Informasi</h3>
-                        <p>Mata kuliah ini bertujuan untuk memberikan pemahaman terhadap sistem informasi yang mencakup teori, teknologi dan perangkat yang dapat digunakan dalam mengelola bisnis.</p>
+                        <p>Mata kuliah ini bertujuan untuk memberikan pemahaman terhadap sistem informasi yang mencakup
+                            teori, teknologi dan perangkat yang dapat digunakan dalam mengelola bisnis.</p>
                     </article>
                 </div>
-             </section>
+            </section>
 
-             <!-- Kontak -->
-              <section id="kontak">
+            <!-- Kontak -->
+            <section id="kontak">
                 <h2>Kontak</h2>
                 <article>
                     <p>Email: salmanurul@gmail.com</p>
                     <p>No Hp: +6281234567890</p>
                 </article>
-              </section>
+            </section>
 
-              <!-- Social Media -->
-               <section id="social-media">
+            <!-- Social Media -->
+            <section id="social-media">
                 <h2>Social Media</h2>
                 <article>
                     <p>
-                        <a href="https://instagram.com" target="_blank">Instagram</a> | 
-                        <a href="https://linkedin.com" target="_blank">LinkedIn</a> | 
+                        <a href="https://instagram.com" target="_blank">Instagram</a> |
+                        <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
                         <a href="https://github.com" target="_blank">GitHub</a>
                     </p>
                 </article>
-               </section>
+            </section>
 
-              <!-- Form -->
-               <section id="form">
+            <!-- Form -->
+            <section id="form">
                 <h2> Form Pendaftaran</h2>
 
                 <form id="formPendaftaran">
@@ -124,52 +134,16 @@
                 <!--HASIL-->
                 <div id="hasilPendaftaran"></div>
 
-        </section>
+            </section>
 
-        <!-- VISITOR COUNTER -->
-        <section id="visitor-counter">
-            <h2>Buku Tamu / Visitor</h2>
-            <article>
-                <div class="counter-info">
-                    <p>Total Kunjungan: <strong id="view-count">0</strong></p>
-                </div>
-                
-                <div class="visitor-form">
-                    <form id="formVisitor">
-                        <label for="visitorName">Siapa yang berkunjung?</label>
-                        <div style="display: flex; gap: 10px; margin-top: 5px;">
-                            <input type="text" id="visitorName" placeholder="Masukkan nama Anda..." required>
-                            <button type="submit">Hadir!</button>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="visitor-list-container">
-                    <h3>Daftar Pengunjung Baru:</h3>
-                    <ul id="visitorList" class="visitor-list">
-                        <!-- Visitor items will be appended here -->
-                    </ul>
-                </div>
-            </article>
-        </section>
-
-        <section id="todo">
-            <h2>To Do List</h2>
-
-        <article>
-            <input type="text" id="todoInput" placeholder="Tulis tugas...">
-            <button id="addTodo">Tambah</button>
-
-            <ul id="todoList"></ul>
-        </article>
-        </section>
 
         </main>
 
         <!-- Footer -->
-         <footer>
+        <footer>
             <p>&copy; 2026 Belajar PemWeb</p>
-         </footer>
-         <script src="script.js"></script>
+        </footer>
+        <script src="script.js"></script>
 </body>
+
 </html>
